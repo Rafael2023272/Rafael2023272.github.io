@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Clans Ratings and Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SupercellMagic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(94, 52, 52);
+            color: #ffffff;
+            margin: 0;
+           
+            
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #6c1515; /* Red background */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: slideInDown 1s ease-out;
+            font-weight: 100;
+        }
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        header img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'SupercellMagic', sans-serif;
+        }
+
+        .hero {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 60px 0;
+            color: white;
+            margin-top: 80px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .review-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .review-box {
+            background-color: #9f9494ad;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .review-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .review-box:last-child {
+            margin-bottom: 0;
+        }
+
+        .review-header {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .review-body {
+            font-size: 0.9em;
+            color: #ffffff;
+        }
+
+        .stars {
+            color: #f39c12;
+        }
+
+        .short-review {
+            display: block;
+        }
+
+        .full-review {
+            display: none;
+        }
+
+        .read-more-btn {
+            display: flex;
+            background-color: #7a0d0d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 20px auto;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: auto;
+        }
+
+        .read-more-btn:hover {
+            background-color: #810c0c;
+            width: 100px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        footer {
+            background-color: #262525;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer img {
+            height: 60px;
+            margin: 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-family: 'SupercellMagic', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="coc logo.png" alt="Clash of Clans Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clans.html">Clans</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Trailers.html">Trailers</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Clash of Clans Ratings and Reviews</h1>
+    </div>
+    <div class="review-container">
+        <div class="review-box">
+            <div class="review-header">
+                <strong>Jackito7895</strong>, 10/13/2022 - <span class="stars">★★★★★</span>
+            </div>
+            <div class="review-body">
+                <p class="short-review">
+                    10 years of playing review, P.S. WHERE IS HALLOWEEN SOUND!!!! Been playing this game since it came out. I was 13 when it did and I’m currently 23. 
+                    There was a time when destroying army camps would destroy troops...
+                </p>
+                <p class="full-review">
+                    10 years of playing review, P.S. WHERE IS HALLOWEEN SOUND!!!! Been playing this game since it came out. I was 13 when it did and I’m currently 23. 
+                    There was a time when destroying army camps would destroy troops. A time where you could sell buildings too. Over my many years of playing this game. 
+                    I have to say it’s extremely pay to win, but it’s doable without money if you put in the time. All upgrades are locked by time constraints and resource amounts.
+                </p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-header">
+                <strong>Spancer J</strong>, 09/05/2022 - <span class="stars">★★★☆☆</span>
+            </div>
+            <div class="review-body">
+                <p class="short-review">
+                    Way too expensive and much too long upgrades. Clash is a wonderful game but it is plagued with non-game nuisances like upgrade timers and artificial length...
+                </p>
+                <p class="full-review">
+                    Way too expensive and much too long upgrades. Clash is a wonderful game but it is plagued with non-game nuisances like upgrade timers and artificial length. 
+                    The game could be about playing it, but it becomes just about waiting for upgrades to finish 95% of the time. The solution Clash of Clans introduced from the beginning, 
+                    I believe, is still just spend money to speed things up. If I wanted to catch up to another player that has been playing longer than me, I would need to spend hundreds of dollars, 
+                    maybe even thousands, to speed up something that could be a click of a button. The game isn’t even about raiding to get enough gold or elixir, it’s about playing for a day in between 
+                    a 3-7 day window while you wait for your town to build up instead of playing the game 3-7 days to earn enough resources to upgrade your buildings. The involvement with clan wars and 
+                    I guess the rank system are the only things you could consider to be daily playable progress, and you are going to hit a level of base you can’t make progress on until your troops are 
+                    high enough level eventually anyways. It’s just a shame that this could be a game I play instead of a game I look at. I shouldn’t be angry at a simple game but it’s hard not to when I 
+                    look at it and can’t upgrade or progress for 5 days while my builders finish making my air defense do ~5-10% more damage maybe. The clan bases and daily incentives are cool but it doesn’t 
+                    matter when you have full storage for a week and can’t do anything.
+                </p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-header">
+                <strong>Landen Carter</strong>, 06/15/2021 - <span class="stars">★★★☆☆</span>
+            </div>
+            <div class="review-body">
+                <p class="short-review">
+                    It’s good but a bad flaw. I love playing CoC because it’s fun and addicting, thus the rating, but because it’s not a 4-star or 5-star rating is because of Supercell banning me for no reason...
+                </p>
+                <p class="full-review">
+                    It’s good but a bad flaw. I love playing CoC because it’s fun and addicting, thus the rating, but because it’s not a 4-star or 5-star rating is because of Supercell banning me for no reason. 
+                    The reason why they banned me was for my in-game name because it was inappropriate, which it wasn’t, but that’s not the point. They should just give you a warning or at least a month ban instead 
+                    of banning you for life. I spent a lot of money on the game but they said I violated the terms of service but they should have just warned me first instead of banning me for life. This is a mobile
+                    game it should never be that serious and there are people who have names that I can’t even say because of how bad they are but they won’t ban them at all. Supercell you have a good game just don’t
+                    make it where you ban people for little things like this at least give a warning. This is why it’s a 3-star instead of 5.
+                </p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-header">
+                <strong>Mr. Critic1234</strong>, 11/12/2020 - <span class="stars">★★★★☆</span>
+            </div>
+            <div class="review-body">
+                <p class="short-review">
+                    Amazing game but a slight issue. The only reason I didn’t give this game a 5-star rating is because of the upgrade times...
+                </p>
+                <p class="full-review">
+                    Amazing game but a slight issue. The only reason I didn’t give this game a 5-star rating is because of the upgrade times. The upgrade times are extremely long and are 
+                    making the game less enjoyable because I have to wait to play. But the game itself is awesome, the graphics are good, the gameplay is nice, and I really enjoy playing it.
+                    I just wish the upgrade times were a bit shorter.
+                </p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-header">
+                <strong>Rey de las Arañas</strong>, 01/12/2023 - <span class="stars">★★★☆☆</span>
+            </div>
+            <div class="review-body">
+                <p class="short-review">
+                    Very Attractive Game, I enjoy this game for many of its functions. I enjoy the battling without all the gore, so it can be played with people who are conscious of these things...
+                </p>
+                <p class="full-review">
+                    Very Attractive Game I enjoy this game for many of its functions. I enjoy the battling without all the gore, so it can be played with people who are conscious of these things. 
+                    It has a ‘Join Clans’ and a ‘Add Friends’ function if you want to play with family members and friends, or make new ones. It has an original layout far different from most games, 
+                    that is fun to play. The only things that are negative about this game is the wait time, how all the sceneries, magic items and perks have to be bought with real currency and not 
+                    in game gems and the ‘Clan War’ function. If the wait time for everything was cut in half people would be able to play without one hour to three day waiting periods which would cause 
+                    people to play for longer periods of time. If the sceneries, perks, magic items, e.t.c, were able to be bought with gems, players would have more freedom in purchase options. Lastly, 
+                    if players could have infinite ‘Attack’ options people would be even more attracted to the game since they wouldn’t have to wait for the war to end. Other than those obstacles, this game 
+                    has comical graphics, a little bit of strategy and fantasy creatures with both great styles and different attacks. Once the obstacles are fixed I believe that this game will receive a lot 
+                    of better ratings from old-time players and new ones.
+                </p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+        <div class="review-box">
+            <div class="review-header">
+                <strong>Guilber Teixeira</strong>, 08/26/2018 - <span class="stars">★★★☆☆</span>
+            </div>
+            <div class="review-body">
+                <p class="short-review">
+                    Game is fun, but needs improvements Hey guys, hopefully this review will make it to the supercell team. I have played this game for awhile and as a player I’ve noticed the dificulteis it is to climb to the top...
+                </p>
+                <p class="full-review">
+                    Game is fun, but needs improvements Hey guys, hopefully this review will make it to the supercell team. I have played this game for awhile and as a player I’ve noticed the dificulteis it is to climb to the top. 
+                    To start with I want to talk about upgrading the walls. I’m at a point where my next walls upgrade will be 4mil per wall. This seems very unbalanced compared to what it costs to upgrade the buildings. I do want 
+                    to say tho, thank you supercell team for coming out with the magic books!!! I just couldn’t bear the idea of waiting a month for a TH upgrade! Anyhow, the walls, way too expensive to upgrade, 4mil for a single piece 
+                    of wall when a defense building costs only about twice as that, “maybe a way to add a less expensive way to upgrade the walls if you choose to let your builder work on it for awhile? Just an idea!” Many players have 
+                    very rushed walls and it seems like a general issue.
+                </p>
+                <button class="read-more-btn">Read more</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="coc logo.png" alt="Clash of Clans Logo">
+        <img src="logo.png" alt="Supercell Logo">
+        <p>© To Supercell 2024. All Rights Reserved. Rafael S. Purisima</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const reviewBody = button.parentElement;
+                const shortReview = reviewBody.querySelector('.short-review');
+                const fullReview = reviewBody.querySelector('.full-review');
+                if (shortReview.style.display === 'none') {
+                    shortReview.style.display = 'block';
+                    fullReview.style.display = 'none';
+                    button.textContent = 'Read more';
+                } else {
+                    shortReview.style.display = 'none';
+                    fullReview.style.display = 'block';
+                    button.textContent = 'Read less';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
