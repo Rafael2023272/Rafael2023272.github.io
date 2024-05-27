@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clash of Clans - Clan Information</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'SupercellMagic', 'Arial Narrow', Arial, sans-serif;
+        color: #2c2c2c;
+        margin: 0;
+        padding-top: 80px;
+        background-color: antiquewhite;
+        
+     }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-size: cover;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        animation: slideInDown 1s ease-out;
+        background-color: #6c1515;
+    }
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    header img {
+        height: 60px;
+    }
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'SupercellMagic', sans-serif;
+    }
+    .header {
+        text-align: center;
+        padding: 50px;
+        background-image: url('background.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .container {
+        max-width: 1000px;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .container-box {
+        
+        
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .section h2 {
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .info-box {
+        background-image: url('info_bg.jpg');
+        background-size: cover;
+        padding: 20px;
+        border-radius: 5px;
+        color: #000000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .top-clans {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .clan {
+        background-color: #e6e1d3;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        width: calc(33.333% - 40px);
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .clan img.sticker {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        width: 70px;
+        height: 70px;
+    }
+    .clan:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    .clan h3 {
+        margin-top: 0;
+    }
+    footer {
+        background-color: #262525;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+    footer img {
+        height: 60px;
+        margin: 10px;
+    }
+    footer p {
+        margin-top: 10px;
+        font-family: 'SupercellMagic', sans-serif;
+    }
+</style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="coc logo.png" alt="Clash of Clans Logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clans.html">Clans</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="trailers.html">Trailers</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="header">
+    <h1>About Clash of Clans</h1>
+    <p>Discover the amazing world of Clash of Clans</p>
+</div>
+
+<div class="container">
+    <div class="container-box">
+        <div class="section">
+            <h2>What is a Clan?</h2>
+            <div class="info-box">
+                <p>Clans are an optional feature in the game, but its strongly recommended that every player should join one.</p>
+                <p>Collaboration within a clan is essential for success.</p>
+                <p>Clans compete in two main ways:</p>
+                <ul>
+                    <li><strong>Trophy Collection:</strong> Members pool their trophies and battle to collect the most trophies.</li>
+                    <li><strong>Clan Wars:</strong> Clans participate in wars to earn loot and Clan XP.</li>
+                </ul>
+                <p>Within a clan, members can socialize through private chat, challenge each other, and donate troops, spells, and siege machines.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="section">
+            <h2>Joining a Clan</h2>
+            <div class="info-box">
+                <p>To become a member of a clan, you must first repair your Clan Castle (located in the South West of your village). There are several ways to join a clan:</p>
+                <ol>
+                    <li>View a clan with the status “Anyone Can Join” and tap the “join” button.</li>
+                    <li>Send a request to join an “invite-only” clan.</li>
+                    <li>Accept an invitation sent by a clan elder, co-leader, or leader.</li>
+                </ol>
+                <p>Some clans have minimum trophy and Town Hall requirements for joining.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="section">
+            <h2>Creating a New Clan</h2>
+            <div class="info-box">
+                <p>To create a new clan, you must first rebuild the Clan Castle. Access the “Create Clan” interface from the Clan button on the Clan Castle. Name your clan (between 2 and 15 characters, including spaces). You can have up to 50 members in a clan, including the leader.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <div class="section">
+            <h2>Here are the currently Top 3 Clans Worldwide</h2>
+            <div class="top-clans">
+                <div class="clan">
+                    <img class="sticker" src="R.png" alt="Top 1 Clan">
+                    <h3>TOP 1: P.G ZOOS GOODS</h3>
+                    <p>CLAN NUMBER: #2PQ9UPU8</p>
+                    <p>CLAN LEVEL: 20</p>
+                    <p>MEMBERS: 46/50</p>
+                    <p>TOTAL TROPHIES: 60,472</p>
+                    <p>CLAN LOCATION: IRAN</p>
+                    <p>REQUIRED TROPHIES TO JOIN: 5,500</p>
+                    <p>TYPE: INVITE ONLY</p>
+                </div>
+                <div class="clan">
+                    <img class="sticker" src="R.png" alt="Top 2 Clan">
+                    <h3>TOP 2: MEGA SOLTAN</h3>
+                    <p>CLAN NUMBER: #Y80QGLYR</p>
+                    <p>CLAN LEVEL: 26</p>
+                    <p>MEMBERS: 48/50</p>
+                    <p>TOTAL TROPHIES: 60,384</p>
+                    <p>CLAN LOCATION: IRAN</p>
+                    <p>REQUIRED TROPHIES TO JOIN: 5,500</p>
+                    <p>TYPE: INVITE ONLY</p>
+                </div>
+                <div class="clan">
+                    <img class="sticker" src="R.png" alt="Top 3 Clan">
+                    <h3>TOP 3: ABO_FAHAD COC</h3>
+                    <p>CLAN NUMBER: #9Q2CY9C2</p>
+                    <p>CLAN LEVEL: 25</p>
+                    <p>MEMBERS: 49/50</p>
+                    <p>TOTAL TROPHIES: 60,371</p>
+                    <p>CLAN LOCATION: KUWAIT</p>
+                    <p>REQUIRED TROPHIES TO JOIN: 5,500</p>
+                    <p>TYPE: INVITE ONLY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <img src="coc logo.png" alt="Clash of Clans Logo">
+    <img src="logo.png" alt="Supercell Logo">
+    <p>© Supercell 2024. All Rights Reserved. Rafael S. Purisima</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll('.value');
+        const speed = 300; // Adjust for faster/slower counting
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+
+                // Calculate the increment
+                const increment = target / speed;
+
+                // If the current count is less than the target, increase the count
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCount();
+        });
+    });
+</script>
+</body>
+</html>
