@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Clash of Clans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SupercellMagic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #d0d0d0a2;
+            color: #2c2c2c;
+            margin: 0;
+            padding-top: 80px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-image: url('header_bg.jpg');
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: slideInDown 1s ease-out;
+            background-color: #6c1515;
+        }
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        header img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'SupercellMagic', sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 0;
+            flex-wrap: wrap;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;
+        }
+       
+
+        .content div {
+            text-align: center;
+            max-width: 200px;
+            margin: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .content img {
+            width: 100px;
+            height: auto;
+        }
+
+        .content .title {
+            color: rgb(31, 31, 31);
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .content .value {
+            color: rgb(2, 69, 2);
+            font-size: 2em;
+            margin-top: 5px;
+        }
+
+        .additional-info {
+            padding: 50px 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .additional-info .info-content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .additional-info h2 {
+            margin-bottom: 20px;
+            color: rgb(40, 40, 40);
+            font-size: 2em;
+        }
+
+        .additional-info p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .additional-info img {
+            width: 150px;
+            height: auto;
+            margin: 0 20px;
+        }
+        .center {
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer {
+            background-color: #262525;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+        footer img {
+            height: 60px;
+            margin: 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-family: 'SupercellMagic', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="coc logo.png" alt="Clash of Clans Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clans.html">Clans</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trailers.html">Trailers</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header">
+        <h1>About Clash of Clans</h1>
+        <p>Discover the amazing world of Clash of Clans</p>
+    </div>
+
+    <div class="content">
+        <div>
+            <img src="barbarian.png" alt="First Launched">
+            <div class="title">First Launched</div>
+            <div class="value" data-target="2012">0</div>
+        </div>
+        <div>
+            <img src="giant.png" alt="Active Players">
+            <div class="title">Active Players</div>
+            <div class="value" data-target="500000000">0</div>
+        </div>
+        <div>
+            <img src="babydragon.png" alt="Developers">
+            <div class="title">Developers</div>
+            <div class="value" data-target="300">0</div>
+        </div>
+        <div>
+            <img src="witch.png" alt="Clan Wars">
+            <div class="title">Clan Wars</div>
+            <div class="value" data-target="4000000">0</div>
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <img src="kill.png" alt="Strategy">
+        <div class="info-content">
+            <h2>Why you need to Play Clash of Clans?</h2>
+            <p>Clash of Clans offers a unique blend of strategic planning and competitive fast-paced combats. You build and upgrade your village, train troops, and battle with millions of other players online!</p>
+            <p>Join a clan, participate in Clan Wars, and prove your mettle in various game modes. With regular updates and new content, there's always something new to experience.</p>
+        </div>
+        <img src="kill.png" alt="Clan Wars">
+    </div>
+    </div> <!-- Close the additional-info div here -->
+    
+    <footer>
+        <img src="coc logo.png" alt="Clash of Clans Logo">
+        <img src="logo.png" alt="Supercell Logo">
+        <p>© To Supercell 2024. All Rights Reserved. Rafael S. Purisima</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.value');
+            const speed = 300; // Adjust for faster/slower counting
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+
+                    // Calculate the increment
+                    const increment = target / speed;
+
+                    // If the current count is less than the target, increase the count
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        });
+    </script>
+</body>
+</html>
+
