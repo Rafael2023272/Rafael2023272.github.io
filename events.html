@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Clans Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SupercellMagic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #fff8ee;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #6c1515;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            animation: slideInDown 1s ease-out;
+        } 
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'SupercellMagic', sans-serif;
+        }
+
+        .hero {
+            width: 1520px;
+            padding: 50px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px #000000;
+            animation: fadeInUp 1s ease-out forwards;
+            margin-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 2em;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 4px;
+            animation: fadeIn 1s ease-in;
+            
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #151515;
+        }
+
+        .content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #262525;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer img {
+            height: 60px;
+            margin: 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-family: 'SupercellMagic', sans-serif;
+        }
+
+        .news-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e3d9cf;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+            transition: transform 0.3s;
+        }
+        .news-item:hover {
+        transform: scale(1.05);
+    }
+        .news-item img {
+            max-width: 180px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .news-item-content {
+            flex: 1;
+        }
+        
+
+        .news-item-content h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .news-item-content p {
+            margin-bottom: 10px;
+        }
+
+        .news-item-content a {
+            text-decoration: none;
+            color: #00244b;
+            font-weight: bold;
+        }
+
+        .news-item-content a:hover {
+            text-decoration: underline;
+        }
+        .balloon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            margin-top: 200px;
+            
+        }
+
+        .balloon-left {
+            /* Reverses the order of this element */
+            transform: scaleX(-1); /* Flips the image horizontally */
+            width: 400px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .balloon-right {
+            width: 400px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="coc logo.png" alt="Clash of Clans Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clans.html">Clans</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trailers.html">Trailers</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="balloon-container">
+        <img src="balloon.png" alt="Clash of Clans Balloon Left" class="balloon-left">
+        <img src="balloon.png" alt="Clash of Clans Balloon Right" class="balloon-right">
+    </div>
+    <div class="hero">
+        <h1>Clash of Clans News</h1>
+    </div>
+
+    <div class="content">
+        <div class="news-item">
+            <img src="news1.png" alt="Win a Haaland Signed Jersey">
+            <div class="news-item-content">
+                <p><strong>CLASH OF CLANS — MAY 18, 2024</strong></p>
+                <h2>Win a Haaland Signed Jersey!</h2>
+                <p>Hey Chief! Ready for another Haaland signed jersey giveaway? This time we have a different challenge for you so make sure you read the information below!</p>
+                <a href="https://supercell.com/en/games/clashofclans/blog/">Learn More</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="news2.jpg" alt="Clash With Haaland Season">
+            <div class="news-item-content">
+                <p><strong>CLASH OF CLANS — MAY 1, 2024</strong></p>
+                <h2>Welcome to Clash With Haaland Season!</h2>
+                <p>It is time for Clash of Clans to enter Football season with Erling Haaland! Yes, he does play Clash of Clans for real, and Barbarian King Haaland Skin is here, along with so much more!</p>
+                <a href="https://supercell.com/en/games/clashofclans/blog/">Learn More</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="news3.jpg" alt="Fair Play Policy Update">
+            <div class="news-item-content">
+                <p><strong>CLASH OF CLANS — APR 30, 2024</strong></p>
+                <h2>Update to our Fair Play Policy and Next Steps</h2>
+                <p>Hey, Chief! It’s been a while since we last provided an update regarding our Fair Play policy and what we’ve been doing to keep Clash of Clans safe and fair for everyone.</p>
+                <a href="https://supercell.com/en/games/clashofclans/blog/">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="coc logo.png" alt="Clash of Clans Logo">
+        <img src="logo.png" alt="Supercell Logo">
+        <p>© To Supercell 2024. All Rights Reserved. Rafael S. Purisima</p>
+    </footer>
+</body>
+</html>
