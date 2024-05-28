@@ -8,7 +8,7 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box;      /* Header */
         }
 
         body {
@@ -338,6 +338,7 @@
             margin-left: 50px;
         }
 
+         /* footer */
         footer {
             background-color: #262525;
             color: #ffffff;
@@ -465,7 +466,7 @@
     <footer>
         <img src="coc logo.png" alt="Clash of Clans Logo">
         <img src="logo.png" alt="Supercell Logo">
-        <p>© To Supercell 2024. All Rights Reserved. Rafael S. Purisima</p>
+        <p>© To Supercell 2024. All Rights Reserved. Rafael S. Purisima</p>    
     </footer>
     
     <script>
@@ -474,7 +475,7 @@
             const triggerBottom = window.innerHeight / 5 * 4;
 
             cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
+                const cardTop = card.getBoundingClientRect().top; //js for the card section
 
                 if (cardTop < triggerBottom) {
                     card.classList.add('show');
